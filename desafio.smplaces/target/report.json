@@ -1,0 +1,303 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-10T00:37:52.119Z",
+        "line": 8,
+        "name": "como cliente quero adicionar produtos no carrinho",
+        "description": "",
+        "id": "carrinho-e-checkout-magalu;como-cliente-quero-adicionar-produtos-no-carrinho",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9146668200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesse o site \"https://www.magazineluiza.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.magazineluiza.com.br/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "tests.Steps.que_acesse_o_site(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 105373403800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "escolher os produtos desejados",
+            "match": {
+              "location": "tests.Steps.escolher_os_produtos_desejados()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3366124200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "no carrinho sao apresentados os produtos escolhidos",
+            "match": {
+              "location": "tests.Steps.no_carrinho_sao_apresentados_os_produtos_escolhidos()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testesregressivos"
+          },
+          {
+            "name": "@adicaoprodutos"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-10T00:39:50.146Z",
+        "line": 14,
+        "name": "como cliente quero fazer alterações no carrinho",
+        "description": "",
+        "id": "carrinho-e-checkout-magalu;como-cliente-quero-fazer-alterações-no-carrinho",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3053776200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que esteja no carrinho de compras",
+            "match": {
+              "location": "tests.Steps.que_esteja_no_carrinho_de_compras()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8535848200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "realizar a alteracao das quantidades dos itens",
+            "match": {
+              "location": "tests.Steps.realizar_a_alteracao_das_quantidades_dos_itens()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3260694400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "carrinho apresentara as novas quantidades de produtos",
+            "match": {
+              "location": "tests.Steps.carrinho_apresentara_as_novas_quantidades_de_produtos()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testesregressivos"
+          },
+          {
+            "name": "@alterarquantidade"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-10T00:40:05.017Z",
+        "line": 20,
+        "name": "como cliente quero excluir produtos do carrinho",
+        "description": "",
+        "id": "carrinho-e-checkout-magalu;como-cliente-quero-excluir-produtos-do-carrinho",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3035590700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "que queira desistir de um item",
+            "match": {
+              "location": "tests.Steps.que_queira_desistir_de_um_item()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5299435100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clicar para excluir",
+            "match": {
+              "location": "tests.Steps.clicar_para_excluir()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5243705900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "produto sera retirado do carrinho",
+            "match": {
+              "location": "tests.Steps.produto_sera_retirado_do_carrinho()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testesregressivos"
+          },
+          {
+            "name": "@excluirproduto"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-10T00:40:18.604Z",
+        "line": 26,
+        "name": "como cliente quero alterar carrinho",
+        "description": "",
+        "id": "carrinho-e-checkout-magalu;como-cliente-quero-alterar-carrinho",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3015644000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "que esteja no carrinho",
+            "match": {
+              "location": "tests.Steps.que_esteja_no_carrinho()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8233801900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "aumentar as quantidades da compra",
+            "match": {
+              "location": "tests.Steps.aumentar_as_quantidades_da_compra()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3210560800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "validar as quantidades e valores alterados",
+            "match": {
+              "location": "tests.Steps.validar_as_quantidades_e_valores_alterados()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testesregressivos"
+          },
+          {
+            "name": "@quantidadeevaloresdocarrinho"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-10T00:40:33.077Z",
+        "line": 32,
+        "name": "como cliente quero fazer login para finalizar a compra",
+        "description": "",
+        "id": "carrinho-e-checkout-magalu;como-cliente-quero-fazer-login-para-finalizar-a-compra",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3040511600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "que tenha feito a escolha dos itens",
+            "match": {
+              "location": "tests.Steps.que_tenha_feito_a_escolha_dos_itens()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4793360700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "clicar em continuar",
+            "match": {
+              "location": "tests.Steps.clicar_em_continuar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1792965300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "sera direcionado para tela de login e cadastro",
+            "match": {
+              "location": "tests.Steps.sera_direcionado_para_tela_de_login_e_cadastro()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testesregressivos"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "carrinho e checkout magalu",
+    "description": "  Eu como usuario quero acessar o site da magazine luiza para compras",
+    "id": "carrinho-e-checkout-magalu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/magazine.feature",
+    "tags": [
+      {
+        "name": "@testesregressivos",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
