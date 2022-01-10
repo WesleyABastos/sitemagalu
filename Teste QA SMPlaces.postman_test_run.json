@@ -1,0 +1,172 @@
+{
+	"id": "62f69633-33cf-4934-b59e-5fc458a89e62",
+	"name": "Teste QA SMPlaces",
+	"timestamp": "2022-01-10T01:30:07.257Z",
+	"collection_id": "17183859-06181b5d-14c8-453c-bd77-3403f8a96ffc",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "dcc7769e-74c3-47f1-8407-c5a2e6ea5fdd",
+			"name": "CA 01 - Retorno de informações válidas com cep existente no site dos correios",
+			"url": "https://cep.awesomeapi.com.br/json/06462310",
+			"time": 168,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validar status code de sucesso 200 para cep informado": true,
+				"Validar nome da rua no body response": true,
+				"Validar nome da cidade para o cep informado": true
+			},
+			"testPassFailCounts": {
+				"Validar status code de sucesso 200 para cep informado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar nome da rua no body response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validar nome da cidade para o cep informado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				168
+			],
+			"allTests": [
+				{
+					"Validar status code de sucesso 200 para cep informado": true,
+					"Validar nome da rua no body response": true,
+					"Validar nome da cidade para o cep informado": true
+				}
+			]
+		},
+		{
+			"id": "e7412fbf-e765-4a38-8410-36722f8260eb",
+			"name": "CA 03 - Inserindo dados inválidos para consulta de cep (status 400)",
+			"url": "https://cep.awesomeapi.com.br/json/06462!00",
+			"time": 34,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Validar status HTTP 400 para dados inválidos": true
+			},
+			"testPassFailCounts": {
+				"Validar status HTTP 400 para dados inválidos": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Validar status HTTP 400 para dados inválidos": true
+				}
+			]
+		},
+		{
+			"id": "59e2e974-046f-4b19-a3d5-bdc9fa2d3f40",
+			"name": "CA 01 - Validar cep não encontrado (Status 404)",
+			"url": "https://cep.awesomeapi.com.br/json/03525101",
+			"time": 21,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Validar status 404 cep não encontrado": true,
+				"Valida mensagem do cep não encontrado": true
+			},
+			"testPassFailCounts": {
+				"Validar status 404 cep não encontrado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Valida mensagem do cep não encontrado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Validar status 404 cep não encontrado": true,
+					"Valida mensagem do cep não encontrado": true
+				}
+			]
+		},
+		{
+			"id": "5b79c11c-c37b-4321-8097-990afe386853",
+			"name": "CA 02 - Busca de Cep por Região ",
+			"url": "https://cep.awesomeapi.com.br/json/11990000",
+			"time": 27,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Deve retornar cep da região": false,
+				"Deve retornar o nome do município": false,
+				"Se API não encontrar o cep da Região, deve retornar status 404 'Cep não encontrado'": true
+			},
+			"testPassFailCounts": {
+				"Deve retornar cep da região": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Deve retornar o nome do município": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Se API não encontrar o cep da Região, deve retornar status 404 'Cep não encontrado'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Deve retornar cep da região": false,
+					"Deve retornar o nome do município": false,
+					"Se API não encontrar o cep da Região, deve retornar status 404 'Cep não encontrado'": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 250,
+	"collection": {
+		"requests": [
+			{
+				"id": "dcc7769e-74c3-47f1-8407-c5a2e6ea5fdd",
+				"method": "GET"
+			},
+			{
+				"id": "e7412fbf-e765-4a38-8410-36722f8260eb",
+				"method": "GET"
+			},
+			{
+				"id": "59e2e974-046f-4b19-a3d5-bdc9fa2d3f40",
+				"method": "GET"
+			},
+			{
+				"id": "5b79c11c-c37b-4321-8097-990afe386853",
+				"method": "GET"
+			}
+		]
+	}
+}
