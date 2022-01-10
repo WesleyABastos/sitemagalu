@@ -2,6 +2,8 @@
 
 Criação de casos de teste
 
+IDE: Eclipse 4.22
+linguagem: Java 
 Implementation	cucumber-jvm - 6.9.1
 BDD: magazine.feature
 
